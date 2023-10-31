@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.4
+-- http://www.phpmyadmin.net
+--
+-- Máquina: localhost
+-- Data de Criação: 15-Out-2013 às 12:01
+-- Versão do servidor: 5.6.12-log
+-- versão do PHP: 5.4.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de Dados: `jornal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `noticia`
+--
+
+CREATE TABLE IF NOT EXISTS `noticia` (
+  `idNoticia` bigint(20) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(50) NOT NULL,
+  `texto` varchar(255) NOT NULL,
+  `data` date NOT NULL,
+  `hora` time NOT NULL,
+  PRIMARY KEY (`idNoticia`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Extraindo dados da tabela `noticia`
+--
+
+INSERT INTO `noticia` (`idNoticia`, `titulo`, `texto`, `data`, `hora`) VALUES
+(1, 'teste', 'asdfasdfasdfasdfasdfasdf', '2013-10-15', '08:43:00'),
+(2, 'asdfasdfadsfadsf', 'adfadsfasdfasdf', '2013-10-15', '08:52:00'),
+(3, 'asdfadsf', 'adfadsfasdfasdf', '2013-10-15', '08:53:00'),
+(4, 'asdfasdf', 'asdfasdfaf', '2013-10-15', '08:53:00'),
+(5, 'aassss', 'aassss', '2013-10-15', '08:54:00'),
+(6, 'dfa', 'dfasdfasdf', '2013-10-15', '08:55:00'),
+(7, 'aaaaa', 'aaaaaa', '2013-10-15', '08:55:00'),
+(8, 'aaaaa', 'aaaaaa', '2013-10-15', '08:56:00'),
+(9, 'asdfa', 'sdfasdfasdf', '2013-10-15', '08:57:00'),
+(10, 'aasdasdfasd', 'fasdfasdfasdf', '2013-10-15', '08:57:00'),
+(11, 'adsfasdf', 'asdfasdf', '2013-10-15', '08:58:00');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
